@@ -1,5 +1,5 @@
 # RUSH00
-## Iterative
+## 2 Nested While
 
 1. Edges
 ```c 
