@@ -27,3 +27,4 @@ void	rush(int width, int height)
 		y++;
 	}
 }
+
