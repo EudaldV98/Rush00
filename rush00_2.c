@@ -2,29 +2,62 @@
 
 void	ft_putchar(char c);
 
-void	print_top_down(int x, char left, char middle, char right)
+void	print_top_down(int width, char left, char middle, char right)
 {
 	int	i;
 
 	ft_putchar(left);
 	i = 0;
-	while (i <= x - 2)
-	{
+	while (++i <= width - 2)
 		ft_putchar(middle);
-		i++;
-	}
 	ft_putchar(right);
 	ft_putchar('\n');
 }
 
-void	print_middle(int x, int y, char wall)
+void	case_width(int height)
 {
+		int i;
 
+		ft_putchar('o');
+		i = 0;
+		while (++i <= height - 2)
+		{
+			ft_putchar('\n');
+			ft_putchar('|');
+		}
+		ft_putchar('\n');
+		ft_putchar('o');
+		ft_putchar('\n');
 }
 
-void	rush(int height, int width)
+void	case_height(int width, char wall, char filler)
 {
+	int i;
+
+	ft_putchar(wall);
+	i = 0;
+	while (++i <= width - 2)
+		ft_putchar(filler);
+	ft_putchar(wall);
+	ft_putchar('\n');
+}
+
+void	rush(int width, int height)
+{
+	int i;
+
 	if (width <= 0 || height <= 0)
 		return ;
-	print_top_down(width, 'o', '-', 'o');
+	if (width == 1)
+		case_width(height);
+	else if (height == 1)
+		case_height(width, 'o', '-');
+	else
+	{
+		print_top_down(width, 'o', '-', 'o');
+		i = 0;
+		while (++i <= height - 2)
+			case_height(width, '|', ' ');
+		print_top_down(width, 'o', '-', 'o');
+ }
 }
