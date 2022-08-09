@@ -46,21 +46,21 @@ void	rush(int width, int height)
 
 	if (width == 1 && height == 1)
 	{
-		ft_putchar('/');
+		ft_putchar('A');
 		ft_putchar('\n');
 	}
 	else if (width <= 0 || height <= 0)
 		return ;
 	else if (width == 1)
-		case_width(height, '/', '*', '\\');
+		case_width(height, 'A', 'B', 'C');
 	else if (height == 1)
-		case_height(width, '/', '*', '\\');
+		case_height(width, 'A', 'B', 'A');
 	else
 	{
-		print_top_down(width, '/', '*', '\\');
+		print_top_down(width, 'A', 'B', 'A');
 		i = 0;
 		while (++i <= height - 2)
-			case_height(width, '*', ' ', '*');
-		print_top_down(width, '\\', '*', '/');
+			case_height(width, 'B', ' ', 'B');
+		print_top_down(width, 'C', 'B', 'C');
 	}
 }
