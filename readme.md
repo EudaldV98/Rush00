@@ -40,4 +40,4 @@ x == w - 1
 
    Print a whitespace
 
-   For the next exercises (*rush0x*) the methodology is the same. The only thing to pay attention, and this is the *core of the rush*, is the good use of **_logical operators_** to get the expected result.
+For the next exercises (*rush0x*) the methodology is the same. The only thing to pay attention, and this is the *core of the rush*, is the good use of **_logical operators_** to get the expected result.
