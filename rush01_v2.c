@@ -44,7 +44,12 @@ void	rush(int width, int height)
 {
 	int i;
 
-	if (width <= 0 || height <= 0)
+	if (width == 1 && height == 1)
+	{
+		ft_putchar('o');
+		ft_putchar('\n');
+	}
+	else if (width <= 0 || height <= 0)
 		return ;
 	if (width == 1)
 		case_width(height, '/', '*', '\\');
