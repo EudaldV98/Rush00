@@ -16,18 +16,18 @@ void	print_top_down(int width, char left, char middle, char right)
 
 void	case_width(int height)
 {
-		int i;
+	int i;
 
-		ft_putchar('o');
-		i = 0;
-		while (++i <= height - 2)
-		{
-			ft_putchar('\n');
-			ft_putchar('|');
-		}
+	ft_putchar('o');
+	i = 0;
+	while (++i <= height - 2)
+	{
 		ft_putchar('\n');
-		ft_putchar('o');
-		ft_putchar('\n');
+		ft_putchar('|');
+	}
+	ft_putchar('\n');
+	ft_putchar('o');
+	ft_putchar('\n');
 }
 
 void	case_height(int width, char wall, char filler)
@@ -59,5 +59,5 @@ void	rush(int width, int height)
 		while (++i <= height - 2)
 			case_height(width, '|', ' ');
 		print_top_down(width, 'o', '-', 'o');
- }
+	}
 }
