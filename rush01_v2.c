@@ -46,7 +46,7 @@ void	rush(int width, int height)
 
 	if (width == 1 && height == 1)
 	{
-		ft_putchar('o');
+		ft_putchar('/');
 		ft_putchar('\n');
 	}
 	else if (width <= 0 || height <= 0)
