@@ -38,5 +38,5 @@ x == w - 1
 
 4. Inside the square
 
-Print a ' '
+   Print a '	'
 
