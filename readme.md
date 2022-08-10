@@ -208,5 +208,5 @@ while ([case])
 
 ## Same pattern as Rush00 and the others
 
-* Just modify `char`'s to be printed in __*funstionn calls*__. Once and for last, simple.
+* Just modify `char`'s to be printed in __*function calls*__. Once and for last, simple.
 
